@@ -1,7 +1,9 @@
 <template>
-  <div>main view</div>
+  <TheHeader />
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TheHeader from '../components/TheHeader.vue'
+</script>
 
 <style scoped></style>
