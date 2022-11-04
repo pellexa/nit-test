@@ -7,7 +7,7 @@
 
       <nav class="nav">
         <router-link to="/" class="nav-item" :class="[path === '/deal' ? 'active' : '']">сделки</router-link>
-        <router-link to="/" class="nav-item" :class="[path === '/counterparty' ? 'active' : '']">
+        <router-link to="/counterparty" class="nav-item" :class="[path === '/counterparty' ? 'active' : '']">
           контрагенты
         </router-link>
         <router-link to="/" class="nav-item" :class="[path === '/report' ? 'active' : '']">отчёты</router-link>
