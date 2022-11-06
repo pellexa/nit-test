@@ -13,8 +13,7 @@ defineProps(['name'])
 
 <style scoped>
 .title-wrapper {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
   align-items: center;
 }
 
@@ -25,9 +24,8 @@ defineProps(['name'])
 }
 
 .title-line {
+  flex: 1;
   border-top: 1px solid #e1f5ff;
-  /* align-self: center; */
   margin: 0 32px 0 34px;
-  transform: translate(0 2px);
 }
 </style>

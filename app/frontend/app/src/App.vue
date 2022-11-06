@@ -66,6 +66,8 @@ import { RouterView } from 'vue-router'
 :root {
   font: 400 14px/1.2 Montserrat;
   box-sizing: border-box;
+  background-color: #f2f7fc;
+  width: 1920px;
 }
 
 *,

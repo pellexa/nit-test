@@ -27,13 +27,12 @@ const path = computed(() => route.path)
 
 <style scoped>
 .header {
-  grid-area: header;
-  margin: 23px 320px 23px 320px;
+  padding: 23px 320px 23px 320px;
+  background-color: #fff;
 }
 
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -43,7 +42,6 @@ const path = computed(() => route.path)
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
   gap: 12px;
 }
 
