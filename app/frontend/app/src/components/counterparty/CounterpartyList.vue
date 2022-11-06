@@ -1,5 +1,6 @@
 <template>
   <TheHeader />
+
   <SubHeader>
     <template v-slot:title><SubHeaderTitle name="контрагенты" class="subheader-title" /></template>
     <template v-slot:form>
@@ -16,6 +17,8 @@
       </SubHeaderForm>
     </template>
   </SubHeader>
+
+  <TablePlain v-if="counterparties" :content="counterparties.value" :headers="fieldMap"></TablePlain>
 </template>
 
 <script setup lang="ts">
@@ -27,6 +30,15 @@ import LocalSearch from '../LocalSearch.vue'
 import ButtonCreate from '../buttons/ButtonCreate.vue'
 import ButtonEdit from '../buttons/ButtonEdit.vue'
 import ButtonDelete from '../buttons/ButtonDelete.vue'
+import TablePlain from '../TablePlain.vue'
+import { storeToRefs } from 'pinia'
+import { useCounterpartiesStore } from '@/stores/counterparties'
+
+const { fieldMap } = useCounterpartiesStore()
+const { counterparties } = storeToRefs(useCounterpartiesStore())
+const { getCounterparties } = useCounterpartiesStore()
+
+getCounterparties()
 
 function create() {
   console.log('Создание контрагента...')
