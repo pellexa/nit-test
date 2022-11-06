@@ -19,6 +19,8 @@
   </SubHeader>
 
   <TablePlain v-if="counterparties" :content="counterparties.value" :headers="fieldMap"></TablePlain>
+
+  <TheFooter />
 </template>
 
 <script setup lang="ts">
@@ -31,6 +33,7 @@ import ButtonCreate from '../buttons/ButtonCreate.vue'
 import ButtonEdit from '../buttons/ButtonEdit.vue'
 import ButtonDelete from '../buttons/ButtonDelete.vue'
 import TablePlain from '../TablePlain.vue'
+import TheFooter from '../TheFooter.vue'
 import { storeToRefs } from 'pinia'
 import { useCounterpartiesStore } from '@/stores/counterparties'
 
