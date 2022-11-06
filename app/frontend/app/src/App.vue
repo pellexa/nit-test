@@ -54,10 +54,10 @@ import { RouterView } from 'vue-router'
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold; /* 700 */
-  src: url('../fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
-    url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
-    url('../fonts/Montserrat/Montserrat-Bold.ttf') format('ttf'),
-    url('../fonts/Montserrat/Montserrat-Bold.eot') format('eot');
+  src: url('./assets/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+    url('./assets/fonts/Montserrat/Montserrat-Bold.ttf') format('ttf'),
+    url('./assets/fonts/Montserrat/Montserrat-Bold.eot') format('eot');
 }
 
 /**
