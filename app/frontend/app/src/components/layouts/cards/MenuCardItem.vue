@@ -1,6 +1,8 @@
 <template>
   <div class="item-wrapper">
-    <slot></slot>
+    <div class="item-icon-wrapper">
+      <slot></slot>
+    </div>
     <div class="title">{{ title }}</div>
   </div>
 </template>
