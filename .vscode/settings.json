@@ -1,0 +1,14 @@
+{
+  "files.watcherExclude": {
+    "**/.git/**": true,
+    "**/vendor/**": true,
+    "**/node_modules/**": true
+  },
+  "eslint.validate": ["vue", "html", "javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "emmet.triggerExpansionOnTab": true,
+  "blade.format.enable": true,
+}
