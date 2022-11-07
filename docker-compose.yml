@@ -1,0 +1,7 @@
+version: "3"
+services:
+  postgres:
+    build:
+      context: ./containers/postgres/
+    ports:
+      - "5432:5432"
