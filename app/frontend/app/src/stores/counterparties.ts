@@ -1,6 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
-import { getEntities } from '../composables/api-calls'
+import type { CounterpartyType } from '@/types/entities-types'
+import { getEntities, createEntities } from '@/composables/api-calls'
 const RESTAPI = import.meta.env.VITE_RESTAPI
 
 export const useCounterpartiesStore = defineStore('counterparties', () => {
@@ -26,5 +27,12 @@ export const useCounterpartiesStore = defineStore('counterparties', () => {
     counterparties.value = response
   }
 
-  return { fieldMap, getCounterparties, counterparties }
+  async function createCounterparty(data: CounterpartyType) {
+    const { response, request } = createEntities(`${RESTAPI}/api/v1/counterparties/`, data)
+
+    await request()
+    counterparties.value = response
+  }
+
+  return { fieldMap, getCounterparties, createCounterparty, counterparties }
 })

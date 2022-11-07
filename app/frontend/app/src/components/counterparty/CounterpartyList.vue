@@ -9,7 +9,7 @@
           <LocalSearch />
 
           <div class="group-button">
-            <ButtonCreate @click="create" />
+            <ButtonCreate @click="showCreateForm" /><CounterpartyCreate ref="counterpartyCreate" />
             <ButtonEdit @click="edit" />
             <ButtonDelete @click="remove" />
           </div>
@@ -34,17 +34,20 @@ import ButtonEdit from '../buttons/ButtonEdit.vue'
 import ButtonDelete from '../buttons/ButtonDelete.vue'
 import TablePlain from '../TablePlain.vue'
 import TheFooter from '../TheFooter.vue'
+import CounterpartyCreate from './CounterpartyCreate.vue'
 import { storeToRefs } from 'pinia'
 import { useCounterpartiesStore } from '@/stores/counterparties'
+import { ref } from 'vue'
 
 const { fieldMap } = useCounterpartiesStore()
 const { counterparties } = storeToRefs(useCounterpartiesStore())
 const { getCounterparties } = useCounterpartiesStore()
+const counterpartyCreate = ref()
 
 getCounterparties()
 
-function create() {
-  console.log('Создание контрагента...')
+function showCreateForm() {
+  counterpartyCreate.value.isShow = true
 }
 
 function edit() {
