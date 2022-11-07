@@ -7,9 +7,9 @@
   <div class="menu-cards">
     <MenuCard title="база сделок">
       <template #menu-items>
-        <MenuCardItem title="просмотр сделок"><IconViewDeal /></MenuCardItem>
-        <MenuCardItem title="добавление сделок"><IconAddDeal /></MenuCardItem>
-        <MenuCardItem title="фильтр по сделкам"><IconFilterDeal /></MenuCardItem>
+        <MenuCardItem title="просмотр сделок"><IconDealView /></MenuCardItem>
+        <MenuCardItem title="добавление сделок"><IconDealAdd /></MenuCardItem>
+        <MenuCardItem title="фильтр по сделкам"><IconDealFilter /></MenuCardItem>
       </template>
       <template #card-icon><IconDeal /></template>
       <template #button><ButtonRightArrow title="Изучить" /></template>
@@ -45,9 +45,9 @@ import SubHeader from '@/components/SubHeader.vue'
 import TheSearch from '@/components/TheSearch.vue'
 import MenuCard from '@/components/layouts/cards/MenuCard.vue'
 import MenuCardItem from '@/components/layouts/cards/MenuCardItem.vue'
-import IconViewDeal from '@/components/icons/cards/IconViewDeal.vue'
-import IconAddDeal from '@/components/icons/cards/IconAddDeal.vue'
-import IconFilterDeal from '@/components/icons/cards/IconFilterDeal.vue'
+import IconDealView from '@/components/icons/cards/IconDealView.vue'
+import IconDealAdd from '@/components/icons/cards/IconDealAdd.vue'
+import IconDealFilter from '@/components/icons/cards/IconDealFilter.vue'
 import IconDeal from '@/components/icons/cards/IconDeal.vue'
 import ButtonRightArrow from '@/components/buttons/ButtonRightArrow.vue'
 import TheFooter from '@/components/TheFooter.vue'
