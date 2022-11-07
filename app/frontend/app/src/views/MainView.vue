@@ -12,17 +12,17 @@
         <MenuCardItem title="фильтр по сделкам"><IconDealFilter /></MenuCardItem>
       </template>
       <template #card-icon><IconDeal /></template>
-      <template #button><ButtonRightArrow title="Изучить" /></template>
+      <template #button><ButtonRightArrow title="изучить" /></template>
     </MenuCard>
 
     <MenuCard title="отчёты отдела">
       <template #menu-items>
         <MenuCardItem title="сводный очтёт" class="cosolidate-report-title"><IconReportConsolidate /></MenuCardItem>
         <MenuCardItem title="EOD, EOW" class="eo-report-title"><IconReportEO /></MenuCardItem>
-        <MenuCardItem title="Сводка MDP и т.д." class="summary-report-title"><IconReportSummary /></MenuCardItem>
+        <MenuCardItem title="сводка MDP и т.д." class="summary-report-title"><IconReportSummary /></MenuCardItem>
       </template>
       <template #card-icon><IconReport /></template>
-      <template #button><ButtonRightArrow title="Перейти" /></template>
+      <template #button><ButtonRightArrow title="перейти" /></template>
     </MenuCard>
 
     <MenuCard title="контрагенты">
@@ -32,7 +32,7 @@
         <MenuCardItem title="фильтр по контрагентам"><IconCounterpartyFilter /></MenuCardItem>
       </template>
       <template #card-icon><IconCounterparty /></template>
-      <template #button><ButtonRightArrow title="Изучить" /></template>
+      <template #button><ButtonRightArrow title="настроить" /></template>
     </MenuCard>
   </div>
 
