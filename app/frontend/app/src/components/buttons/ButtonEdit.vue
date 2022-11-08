@@ -1,5 +1,5 @@
 <template>
-  <button class="button"><IconEdit />реадктировать</button>
+  <button class="button"><IconEdit class="icon-edit" />реадктировать</button>
 </template>
 
 <script setup lang="ts">
@@ -21,7 +21,15 @@ import IconEdit from '../icons/IconEdit.vue'
 }
 
 .button:hover {
-  background-color: #0079c2;
-  color: #fff;
+  color: #0079c2;
+  background: #f2f7fc;
+}
+
+.icon-edit {
+  transition: 0.2s;
+}
+
+.button:hover .icon-edit {
+  fill: #0079c2;
 }
 </style>

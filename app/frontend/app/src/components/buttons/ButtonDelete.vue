@@ -1,5 +1,5 @@
 <template>
-  <button class="button"><IconDelete />удалить</button>
+  <button class="button"><IconDelete class="icon-delete" />удалить</button>
 </template>
 
 <script setup lang="ts">
@@ -21,7 +21,15 @@ import IconDelete from '../icons/IconDelete.vue'
 }
 
 .button:hover {
-  background-color: #0079c2;
-  color: #fff;
+  color: #fc6770;
+  background: #fff5f5;
+}
+
+.icon-delete {
+  transition: 0.2s;
+}
+
+.button:hover .icon-delete {
+  fill: #fc6770;
 }
 </style>
