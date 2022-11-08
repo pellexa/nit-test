@@ -5,4 +5,4 @@ from .models import Counterparty
 class CounterpartySerializer(serializers.ModelSerializer):
     class Meta:
         model = Counterparty
-        fields = ('name', 'rating')
+        fields = ('id', 'name', 'rating')
