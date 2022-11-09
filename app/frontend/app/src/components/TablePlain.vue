@@ -79,7 +79,7 @@ table {
 tr th,
 tr td {
   font: 400 14px/1.5 Montserrat;
-  padding: 18px;
+  padding: 18px 12px;
 }
 
 .tbody-row:nth-child(odd) {
@@ -95,6 +95,7 @@ tr td {
 .header-name {
   font: 700 14px/1.5 Montserrat;
   color: #1e2832;
+  padding-right: 8px;
 }
 
 .header-name::first-letter {
