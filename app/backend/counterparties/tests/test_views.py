@@ -38,7 +38,7 @@ class GetAllCounterpartiesTest(TestCase):
 
     def test_get_invalid_single_counterparty(self):
         response = client.get(
-            reverse('get_delete_update_counterparty', kwargs={'id': 30}))
+            reverse('get_delete_update_counterparty', kwargs={'id': 9999999999}))
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
 
 class CreateNewСounterpartyTest(TestCase):
@@ -103,5 +103,5 @@ class DeleteSingleCounterpartyTest(TestCase):
 
     def test_invalid_delete_counterparty(self):
         response = client.delete(
-            reverse('get_delete_update_counterparty', kwargs={'id': 30}))
+            reverse('get_delete_update_counterparty', kwargs={'id': 9999999999}))
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
