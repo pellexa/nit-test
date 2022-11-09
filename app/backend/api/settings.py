@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'counterparties',
     'corsheaders',
+    'deliverypoints',
+    'deals',
 ]
 
 MIDDLEWARE = [
